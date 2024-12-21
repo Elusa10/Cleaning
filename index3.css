@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.075),rgba(0,0,0,0.75)), url(/images/background.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.clean{
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+}
+.login-signup {
+    position: absolute;
+    top: 20px;
+    right: 5rem;
+    color: rgb(145, 19, 145);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .dashboard-section {
+    display: none;
+    padding: 20px;
+  }
+  .dashboard-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .dashboard-active {
+    display: block !important;
+  }
+
+  .modal-dialog {
+    max-width: 600px; /* Adjust modal width */
+}
+.modal-content {
+    padding: 20px;
+}
+
+#about-us {
+background-color: #f8f9fa; /* Light grey background */
+color: #0a0a0a; /* Dark text */
+text-align: center;
+}
+
+#about-us h2 {
+font-weight: 5rem;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+#about-us p {
+font-size: 1.4rem;
+line-height: 1.6;
+text-align: center;
+justify-content: center;
+}
+
+
+.info-box {
+width: 100%;
+padding: 20px;
+border-radius: 8px;
+background-color: #ffffff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+border: 1px solid #e0e0e0; /* Light border */
+}
+
+.info-box h4 {
+font-size: 2rem;
+color: #790d79; /* Accent color */
+margin-bottom: 5px;
+}
+
+.info-box p {
+font-size: 1rem;
+color: #333;
+margin: 0;
+}
+
+#about-us .container {
+max-width: 900px;
+}
+#our-services .service-box {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: transform 0.3s ease-in-out;
+}
+
+#our-services .service-box:hover {
+transform: translateY(-5px);
+}
+
+#our-services .service-box img {
+width: 100%;
+border-radius: 10px;
+}
+
+#our-services .service-box h5 {
+margin-top: 10px;
+font-size: 1.2rem;
+font-weight: bold;
+color: #811081;
+}
+
+.modal-content {
+border-radius: 10px;
+}
+
+.modal-header .close {
+font-size: 1.5rem;
+color: #7f1183;
+}
+
+.modal-body form .form-group label {
+font-weight: bold;
+}
+
+.modal-body form .btn {
+width: 100%;
+}
+.form-group.btn btn-primary mt-3{
+color: #790d79;
+}
+/* Make sure the background image covers the whole viewport */
+.background {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('your-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the content inside the background */
+.content {
+    text-align: center;
+    color: #ffffff; /* White text */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 80%; /* Responsive width */
+}
+
+/* Style the heading */
+.content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+}
+
+/* Style the button */
+.book-now {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    background-color: #eb1a13cb; /* Green color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now:hover {
+    background-color: #16a085; /* Darker green on hover */
+}
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff; /* White */
+    text-align: left; /* Align to the left */
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Soft glow */
+}
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    display: none; /* Hidden by default */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .close {
+    float: right;
+    cursor: pointer;
+  }
+  .dashboard {
+    margin-top: 20px;
+  }
+
+  body {
+    background-color: #f8f9fa;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100%;
+    z-index: 999;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebarToggle {
+  background-color: #007bff; /* Make the button blue */
+  color: white; /* Set the icon color to white */
+  border: none; /* Remove border */
+  padding: 10px;
+  font-size: 1.5rem;
+  display: block;
+  position: fixed;
+  z-index: 1000;
+}
+
+
+#sidebarToggle i {
+    font-size: 1.5rem;
+}
+
+.dashboard {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #343a40;
+    color: white;
+}
+
+.card-body {
+    background-color: #ffffff;
+    min-height: 200px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 1rem;
+}

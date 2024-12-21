@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Service</title>
+    <link rel="stylesheet" href="index3.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6H+6vH6p7pP1p3p4pP5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p2p3">
+</head>
+<body>
+    <div class="banner">
+    <div class="clean">CleanTopia</div>
+    </div>
+    <div class="login-signup">
+    <span class="banner-text" data-bs-toggle="modal" data-bs-target="#loginModal">Login</span>
+  <span class="banner-text" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</span>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Signup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="signupForm">
+            <div class="mb-3">
+              <label for="signupName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="signupName" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" required>
+            </div>
+            <div class="mb-3">
+              <label for="signupRole" class="form-label">Role</label>
+              <select class="form-select" id="signupRole" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="user">User</option>
+                <option value="cleaner">Cleaner</option>
+                <option value="admin">Admin</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Signup</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="about-us" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">About Us</h2>
+            <p class="lead">
+                At CleanTopia, we are dedicated to providing top-notch cleaning services tailored to meet your specific
+                needs. Our mission is to create clean, healthy, and welcoming environments for homes and businesses
+                alike.
+            </p>
+            <p>
+                We understand the importance of a clean space and how it impacts your productivity, health, and overall
+                well-being. That’s why our team of trained professionals ensures exceptional quality and reliability in
+                every service we offer.
+            </p>
+            <p>
+                Whether you're a busy professional, a business owner, or just need an extra hand, our services are
+                designed to save you time, reduce stress, and bring peace of mind. Partner with us for a hassle-free
+                experience and enjoy the benefits of a spotless space.
+            </p>
+        </div>
+        <!-- Statistic Boxes -->
+        <div class="container mt-5">
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <div class="info-box text-center shadow">
+                        <h4>20</h4>
+                        <p>Satisfied Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="info-box text-center shadow">
+                        <h4>15</h4>
+                        <p>Trusted Cleaners</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="our-services" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <p class="lead mb-5">Explore our wide range of professional cleaning services tailored to meet your needs.
+            </p>
+
+            <div class="row">
+                <!-- Service Boxes -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal1">
+
+                        <img src="/images/house.jpeg" alt="House Cleaning" class="img-fluid">
+                        <h5 class="mt-3">House Cleaning</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal2">
+
+                        <img src="/images/office .webp" alt="Office Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Office Cleaning</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal3">
+                        <img src="/images/move.webp" alt="Move-In/Move-Out Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Move-In/Move-Out Cleaning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal4">
+                        <img src="images/disinfection.jpeg" alt="Disinfection services" class="img-fluid">
+                        <h5 class="mt-3">Disinfection Services</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal5">
+                        <img src="/images/construct.jpeg" alt="Post-Construction Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Post-Constuction Cleaning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal6">
+                        <img src="/images/window.jpeg" alt="Window Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Window Cleaning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal7">
+                        <img src="/images/carpet.jpeg" alt="Carpet Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Carpet Cleaning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal8">
+                        <img src="/images/upholstery.jpeg" alt="Upholstery Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Upholstery Cleaning</h5>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-box" data-bs-toggle="modal" data-bs-target="#serviceModal9">
+                        <img src="/images/laundry.jpeg" alt="Laundry Cleaning" class="img-fluid">
+                        <h5 class="mt-3">Laundry Cleaning</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1: House Cleaning -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel1">House Cleaning - KSh 2,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our house cleaning service ensures your home is spotless and fresh, with a thorough cleaning of
+                        all rooms.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('House Cleaning', 'KSh 2,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Office Cleaning -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel2">Office Cleaning - KSh 5,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our office cleaning service keeps your workplace clean and professional, ensuring a comfortable
+                        and productive environment.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Office Cleaning', 'KSh 5,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Move-In/Move-Out Cleaning -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel3">Move-In/Move-Out Cleaning - KSh 8,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Whether you're moving in or moving out, our team ensures a deep clean to make the space fresh and
+                        ready.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Move-In/Move-Out Cleaning', 'KSh 8,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Disinfection Services -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel4">Disinfection Services - KSh 6,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our disinfection services ensure your space is sanitized and safe, helping prevent the spread of
+                        harmful germs and viruses.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Disinfection Services', 'KSh 6,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Post-Construction Cleaning -->
+    <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel5">Post-Construction Cleaning - KSh 10,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our post-construction cleaning ensures that your newly built or renovated space is free from dust
+                        and debris.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Post-Construction Cleaning', 'KSh 10,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Window Cleaning -->
+    <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel6">Window Cleaning - KSh 3,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our window cleaning service ensures your windows are streak-free and sparkling, letting in more
+                        natural light.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Window Cleaning', 'KSh 3,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 7: Carpet Cleaning -->
+    <div class="modal fade" id="serviceModal7" tabindex="-1" aria-labelledby="serviceModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel7">Carpet Cleaning - KSh 4,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our carpet cleaning service restores your carpets to their original condition, removing dirt,
+                        stains, and allergens.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Carpet Cleaning', 'KSh 4,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 8: Upholstery Cleaning -->
+    <div class="modal fade" id="serviceModal8" tabindex="-1" aria-labelledby="serviceModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel8">Upholstery Cleaning - KSh 5,000</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our upholstery cleaning service refreshes your furniture by removing stains, odors, and
+                        allergens, leaving them looking brand new.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Upholstery Cleaning', 'KSh 5,000')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9: Laundry Cleaning -->
+    <div class="modal fade" id="serviceModal9" tabindex="-1" aria-labelledby="serviceModalLabel9" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel9">Laundry Cleaning - KSh 1,500</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Our laundry cleaning service handles all your laundry needs, ensuring your clothes are clean,
+                        fresh, and ready to wear.</p>
+                    <button type="button" class="btn btn-primary mt-3"
+                        onclick="setServiceDetails('Laundry Cleaning', 'KSh 1,500')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="booking-form" class="py-5">
+      <div class="container">
+          <h2 class="mb-4">Book Your Cleaning Service</h2>
+          <form id="bookingForm">
+              <div class="form-group">
+                  <label for="serviceName">Service Name</label>
+                  <input type="text" class="form-control" id="serviceName" disabled>
+              </div>
+              <div class="form-group">
+                  <label for="servicePrice">Price</label>
+                  <input type="text" class="form-control" id="servicePrice" disabled>
+              </div>
+              <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" required>
+              </div>
+              <div class="form-group">
+                  <label for="date">Preferred Date</label>
+                  <input type="date" class="form-control" id="date" required>
+              </div>
+              <button type="button" class="btn btn-primary mt-3" onclick="bookService()">Book Now</button>
+          </form>
+          <!-- Success Message -->
+          <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+              Service booked successfully!
+          </div>
+      </div>
+  </section>
+
+  <!-- Sidebar Toggle Button (Hamburger Icon) -->
+<button id="sidebarToggle" class="btn btn-dark position-fixed top-50 start-50 translate-middle">
+    <i class="bi bi-list"></i> <!-- Hamburger Icon -->
+</button>
+
+
+<!-- Sidebar -->
+<div id="sidebar" class="position-fixed top-0 end-0 vh-100 bg-dark text-white p-3" style="display: none;">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <button class="btn btn-link text-white" onclick="showDashboard('user')">User Dashboard</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-link text-white" onclick="showDashboard('cleaner')">Cleaner Dashboard</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-link text-white" onclick="showDashboard('admin')">Admin Dashboard</button>
+        </li>
+    </ul>
+</div>
+
+<!-- Main Content Area -->
+<div id="mainContent" class="container-fluid pt-5" style="margin-right: 200px;">
+    <!-- User Dashboard -->
+    <div id="userDashboard" class="dashboard" style="display:none;">
+        <h2>User Dashboard</h2>
+        <div class="card mb-4">
+            <div class="card-header">Available Services</div>
+            <div class="card-body" id="serviceList">
+                <div class="service-item">
+                    <h5>House Cleaning</h5>
+                    <p>Price: $50</p>
+                    <button class="btn btn-primary" onclick="bookService('House Cleaning', 50)">Book Now</button>
+                </div>
+                <div class="service-item">
+                    <h5>Office Cleaning</h5>
+                    <p>Price: $100</p>
+                    <button class="btn btn-primary" onclick="bookService('Office Cleaning', 100)">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cleaner Dashboard -->
+    <div id="cleanerDashboard" class="dashboard" style="display:none;">
+        <h2>Cleaner Dashboard</h2>
+        <div class="card mb-4">
+            <div class="card-header">Assigned Tasks</div>
+            <div class="card-body">
+                <ul id="taskList">
+                    <li>House Cleaning - Location: Downtown</li>
+                    <li>Office Cleaning - Location: Uptown</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="dashboard" style="display:none;">
+        <h2>Admin Dashboard</h2>
+        <div class="card mb-4">
+            <div class="card-header">Manage Services</div>
+            <div class="card-body">
+                <button class="btn btn-success mb-3" onclick="showAddServiceForm()">Add Service</button>
+                <div id="serviceManagement">
+                    <div class="service-item">
+                        <h5>House Cleaning</h5>
+                        <button class="btn btn-danger" onclick="removeService('House Cleaning')">Remove Service</button>
+                    </div>
+                    <div class="service-item">
+                        <h5>Office Cleaning</h5>
+                        <button class="btn btn-danger" onclick="removeService('Office Cleaning')">Remove Service</button>
+                    </div>
+                </div>
+                <div id="addServiceForm" style="display:none;">
+                    <h5>Add New Service</h5>
+                    <input type="text" id="serviceName" class="form-control" placeholder="Service Name">
+                    <input type="number" id="servicePrice" class="form-control" placeholder="Price">
+                    <button class="btn btn-success mt-2" onclick="addService()">Add Service</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Cleaning Service. All Rights Reserved.</p>
+            <p>Follow us on <a href="#" class="text-white">Facebook</a>, <a href="#" class="text-white">Twitter</a>, <a
+                    href="#" class="text-white">Instagram</a></p>
+        </div>
+    </footer>
+
+  <div id="app-container"></div>
+
+  
+
+  
+  
+
+<script src="index3.js"></script>
+<script src="server.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "role": "user",
+      "id": "1652"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password456",
+      "role": "cleaner",
+      "id": "f55f"
+    },
+    {
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "adminpassword",
+      "role": "admin",
+      "id": "f999"
+    },
+    {
+      "id": "f6e7",
+      "role": "cleaner",
+      "name": "candy",
+      "email": "candy67@gmail.com",
+      "password": "6708"
+    },
+    {
+      "id": "008f",
+      "role": "user",
+      "name": "pendo",
+      "email": "pendo15@gmail.com",
+      "password": "6709"
+    },
+    {
+      "id": "7d70",
+      "email": "linda54@gmail.com",
+      "password": "9000",
+      "role": "cleaner"
+    },
+    {
+      "id": "bf3b",
+      "name": "Melvin",
+      "email": "melvincool@gmail.com",
+      "password": "8000",
+      "role": "user"
+    }
+  ]
+}
